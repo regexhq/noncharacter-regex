@@ -10,10 +10,11 @@
 var assert = require('assert');
 var re = require('./');
 
-describe('noncharacter regex', function () {
+describe('non-character regex', function () {
   it('should match non characters in a string:', function () {
     assert(re.test('\uFFFF') === true);
     assert(re.test('abc\uFFFExyz') === true);
     assert('abc\uFFFExyz'.match(re)[0] === '\uFFFE');
+    assert('abc_\uFFFE_xyz'.replace(re, '') === 'abc__xyz');
   });
 });
