@@ -33,8 +33,7 @@
     "regex-cache": "^0.3.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "*"
   },
   "keywords": [
     "characters",

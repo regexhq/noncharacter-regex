@@ -10,7 +10,7 @@
 var noncharacters = require('noncharacters');
 
 // Keep the generated regex in memory, to prevent
-// multiple runtime compilations.
+// runtime compilation from happening more than once.
 var cache = require('regex-cache');
 
 module.exports = cache(function() {
