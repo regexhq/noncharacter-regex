@@ -14,6 +14,9 @@ npm i noncharacter-regex --save
 var regex = require('noncharacter-regex');
 regex.test('abc\uFFFExyz');
 //=> 'true'
+
+// strip non-characters
+'abc\uFFFExyz'.replace(regex, '');
 ```
 
 ## What's this all about?
@@ -22,7 +25,7 @@ regex.test('abc\uFFFExyz');
 
 **Does that happen!?**
 
-It's unlikely, but from time to time the `U+FFFE` non-character may show up in strings since it has the reverse binary sequence of [byte-order marks](http://en.wikipedia.org/wiki/Byte_order_mark).
+It's unlikely, but from time to time the `U+FFFE` non-character may show up in strings since it has the reverse binary sequence of [byte-order marks](http://en.wikipedia.org/wiki/Byte_order_mark). 
 
 Visit [noncharacters] for more info.
 
