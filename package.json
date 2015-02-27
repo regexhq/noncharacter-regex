@@ -1,7 +1,7 @@
 {
   "name": "noncharacter-regex",
   "description": "Regular expression for matching or stripping non-characters from a string.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/regexps/noncharacter-regex",
   "author": {
     "name": "Jon Schlinkert",
@@ -29,7 +29,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "noncharacters": "^1.0.0",
+    "noncharacters": "^1.1.0",
     "regex-cache": "^0.3.0"
   },
   "devDependencies": {
